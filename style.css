@@ -13,7 +13,7 @@
 .wrapper-projects {
 /*  background: #BEFEEB;*/
 /*  background: #FFDFEF;*/
-  background-image: url("file://Desktop/homepage-background.png");
+  background-image: url("file:///Users/username/Desktop/background.png");
     height: 100%;
   background-position: left;
   background-size: cover;
