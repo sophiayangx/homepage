@@ -1,0 +1,49 @@
+.wrapper-home {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  background-image: url(  "http://www.expertrain.com/SiteAssets/Images/19%20healthy%20desserts%20you%20can%20make%20in%20a%20blender/bigstock-Ripe-Pineapple-On-A-Yellow-Woo-115590353.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper-projects {
+/*  background: #BEFEEB;*/
+/*  background: #FFDFEF;*/
+  background-image: url("file://DESKTOP//homepage-background.png");
+    height: 100%;
+  background-position: left;
+  background-size: cover;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: Beauty and the Beast;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+#button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 14px;
+  font-size: 18px;
+  font-family: capitals;
+  transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+#button:hover {
+  background-color: white;
+  color: black;
+}
+
+#div-button {
+  margin-top: 18px;
+}
