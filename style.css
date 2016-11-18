@@ -18,11 +18,12 @@
   justify-content: center;
   /*  background: #BEFEEB;*/
   background: #FFDFEF;
-  background-image: url( "file:///Users/sopyang/Dropbox/PICTURE.png");
+  background-image: url( "https://photos-3.dropbox.com/t/2/AADi17nAWaM3xmxnYP3JEE3YnHWvXCfZQvP7xSq0BrNj3A/12/623942950/png/32x32/1/_/1/2/PICTURE.png/EPPdhYcFGAQgBygH/Fd2nZ0tl-5OdxpMv8axn6JGUIpsDq3HAyuOKTOE3G4s?size=2048x1536&size_mode=3");
   background-attachment: fixed;
   height: 100%;
   background-position: left;
   background-size: cover;
+  background-position: center;
 }
 
 .img-wrapper {
@@ -75,9 +76,8 @@ p {
   transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
-  margin: 0 auto;
   position:relative; 
-  left:50%;
+  left:40%;
 }
 
 #button-wrapper {
