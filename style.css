@@ -75,6 +75,11 @@ p {
   cursor: pointer;
 }
 
+#button-example:hover {
+  background-color: black;
+  color: white;
+}
+
 #button {
   background-color: transparent;
   color: white;
