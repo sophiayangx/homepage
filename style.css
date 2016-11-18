@@ -17,6 +17,10 @@
 
 .wrapper-projects {
 /*  background: #BEFEEB;*/
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
   background: #FFDFEF;
   background-image: url( "file:///Users/sopyang/Desktop/Images/PICTURE.png");
   background-attachment: fixed;
