@@ -20,7 +20,10 @@
 }
 
 img {
-  background-size: cover;
+  display: block;
+  margin: auto;
+  width: 50%;
+  attachment 
 }
 
 h2 {
