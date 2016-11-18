@@ -13,18 +13,13 @@
 .wrapper-projects {
 /*  background: #BEFEEB;*/
   background: #FFDFEF;
+  background-image: url( "http://lindawagner.net/blog/wp-content/uploads/2013/02/IMG_6301.jpg");
   background-attachment: fixed;
     height: 100%;
   background-position: left;
   background-size: cover;
 }
 
-img {
-  display: block;
-  margin: auto;
-  width: 50%;
-  attachment 
-}
 
 h2 {
   color: white;
