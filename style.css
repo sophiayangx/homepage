@@ -40,6 +40,7 @@ h2 {
   font-family: capitals;
   transition-duration: 0.4s;
   transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 #button:hover {
