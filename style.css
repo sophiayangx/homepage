@@ -28,7 +28,10 @@ img {
   position: left;
   height: 100%;
   margin-left: -15px;
+  float: left;
+  display: inline;
 /*  width: 70%;*/
+  
 }
 
 h2 {
