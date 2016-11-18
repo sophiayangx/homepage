@@ -115,14 +115,5 @@ p {
   font-size: 40px;
   cursor: pointer;
   display: block;
-}
-
-.flex-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.projects-title {
-  margin-top: 0px;
-  margin-left: 
+  margin-left: 120px;
 }
