@@ -27,6 +27,7 @@
 
 img {
   display: block;
+  min-height: 500;
 /*  height: 100%;*/
   /*margin-left: -45px;*/
   /*  width: 70%;*/
