@@ -12,13 +12,7 @@
 }
 
 .wrapper-learned {
-  height: 100%;
-  background-image: url("https://img0.etsystatic.com/000/0/5421369/il_fullxfull.281564636.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 50%;
-  
+  height: 100%;  
 }
 
 .wrapper-projects {
