@@ -36,8 +36,15 @@ img {
 /*  width: 70%;*/
 }
 
-#learned {
-float: right;
+h1 {
+  float: right;
+  margin-right: 40px;
+  color: black;
+  text-align: center;
+  font-family: Beauty and the Beast;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-left: 10px;
 }
 
 h2 {
