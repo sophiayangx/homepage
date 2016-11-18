@@ -34,6 +34,11 @@ img {
   
 }
 
+h1 {
+float: right;
+  display: inline;
+}
+
 h2 {
   color: white;
   text-align: center;
