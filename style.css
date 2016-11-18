@@ -63,6 +63,18 @@ p {
   float: right;
 }
 
+#button-example {
+  background-color: transparent;
+  color: black;
+  border: 2px solid;
+  padding: 10px 14px;
+  font-size: 18px;
+  font-family: capitals;
+  transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
 #button {
   background-color: transparent;
   color: white;
