@@ -27,16 +27,14 @@
 img {
   position: left;
   height: 100%;
-  margin-left: -15px;
   float: left;
-  display: inline;
+/*  margin-left: -15px;*/
 /*  width: 70%;*/
   
 }
 
-h1 {
+#learned {
 float: right;
-  display: inline;
 }
 
 h2 {
