@@ -14,7 +14,7 @@
 /*  background: #BEFEEB;*/
   background: #FFDFEF;
   background-image: url("http://lindawagner.net/blog/wp-content/uploads/2013/02/IMG_6301.jpg");
-  background-position: 
+  background-attachment: local;
     height: 100%;
   background-position: left;
   background-size: cover;
