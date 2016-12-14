@@ -1,0 +1,235 @@
+.wrapper-home {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  background-image: url(  "http://www.expertrain.com/SiteAssets/Images/19%20healthy%20desserts%20you%20can%20make%20in%20a%20blender/bigstock-Ripe-Pineapple-On-A-Yellow-Woo-115590353.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*margin: 0px;*/
+}
+
+.wrapper-projtitle {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  /*  background: #BEFEEB;*/
+  background: #FFDFEF;
+  background-image: url( "file:///Users/sopyang/Desktop/PICTURE1.png");
+  background-attachment: fixed;
+  background-position: left;
+  background-size: cover;
+  background-position: center;
+  /*margin: 0px;*/
+}
+
+.wrapper-projects {
+  height: auto;
+  padding-left: 0px;
+  background-color: #f9d09a;
+}
+
+.block {
+  height: 400px;
+  width: 250px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition-duration: 0.4s;
+  vertical-align: top;
+  background: white;
+  cursor: pointer;
+  position: relative;
+  left: 80px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex {
+  width:100%;
+  space-around: 20;
+}
+
+.block:hover {
+  box-shadow: 0 0 50px #8a8e8d;
+}
+
+.blockcolor {
+  height: 170px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+/*.blockelement {
+margin-left: 10px;
+}*/
+
+#bc1 {
+  background: #8b9def;
+}
+
+#bc2 {
+  background: #aae0ce;
+}
+
+#bc3 {
+  background: #ca8bef;
+}
+
+#bc4 {
+  background: #edb6df;
+}
+
+#bc5 {
+  background: #bfa270;
+}
+
+#bc6 {
+  background: #a3a7a8;
+}
+
+#bc7 {
+  background: green;
+}
+
+#bc8 {
+  background: coral;
+}
+
+#bc9 {
+  background: blue;
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+.wrapper-learned {
+  padding-left: 0px;
+}
+
+img {
+  display: block;
+  height: 100%;
+}
+
+h1 {
+  font-family: Beauty and the Beast;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  top: 150px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-family: Beauty and the Beast;
+  font-size: 70px;
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+
+h3 {
+  position: relative;
+  left: 30px;
+  top: 10px;
+  margin-right: 50px;
+  color: #7e8280;
+}
+
+ul {
+  position: relative;
+  top: 20px;
+  color: #7e8280;
+  font-size: 15px;
+  list-style-type: circle;
+}
+
+li {
+  margin-top: 7px;
+}
+
+p {
+  font-family: capitals;
+  font-size: 20px;
+  text-align: center;
+  top: 270px;
+  left: 100px;
+  right: 100px;
+  position: absolute;
+  /*word-wrap: break-word;
+  vertical-align: baseline;*/
+}
+
+#button-example {
+  background-color: transparent;
+  color: black;
+  border: 2px solid;
+  padding: 10px 14px;
+  font-size: 18px;
+  font-family: capitals;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: relative;
+  top: 320px;
+  left: 220px;
+}
+
+#button-example:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+/*#button-wrapper {
+width: 100%;
+height: 200px;
+}*/
+
+#button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 14px;
+  font-size: 18px;
+  font-family: capitals;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: white;
+  color: black;
+}
+
+#div-button {
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
+
+#carrot {
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  transition-duration: 0.4s;
+}
+
+#carrot:hover {
+  color: #878787;
+}

@@ -1,2 +1,0 @@
-# homepage
-Classadoo generated repo
