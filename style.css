@@ -19,7 +19,7 @@
   justify-content: center;
   /*  background: #BEFEEB;*/
   background: #FFDFEF;
-  background-image: url( "https://dl.dropboxusercontent.com/content_link/Km395chak0yeS2u4WXsgzPspood93zDOltaL6qkqHSKQJbmigTtTkNSzBeuQKdH8/file");
+  background-image: url( "file:///Users/sopyang/Desktop/PICTURE1.png");
   background-attachment: fixed;
   background-position: left;
   background-size: cover;
@@ -43,11 +43,20 @@
   margin-top: 30px;
   margin-bottom: 30px;
   transition-duration: 0.4s;
-  /*vertical-align: top;*/
+  vertical-align: top;
   background: white;
   cursor: pointer;
   position: relative;
   left: 80px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex {
+  width:100%;
+  space-around: 20;
 }
 
 .block:hover {
@@ -59,6 +68,10 @@
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
+
+/*.blockelement {
+margin-left: 10px;
+}*/
 
 #bc1 {
   background: #8b9def;
@@ -84,12 +97,16 @@
   background: #a3a7a8;
 }
 
-#b1 {
-  margin-top: 80px;
+#bc7 {
+  background: green;
 }
 
-#b6 {
-  margin-bottom: 80px;
+#bc8 {
+  background: coral;
+}
+
+#bc9 {
+  background: blue;
 }
 
 .img-wrapper {
