@@ -74,16 +74,16 @@
           </div>
           <div class="blockcontent">
             <pre>
-                var shown = true
-                setInterval(function() {
-                  if (shown) {
-                    $(".blinking").css({"visibility": "hidden"});
-                    shown = false;
-                  } else {
-                    $(".blinking").css({"visibility": "visible"});
-                    shown = true;
-                  }
-                }, 800)
+var shown = true
+setInterval(function() {
+  if (shown) {
+    $(".blinking").css({"visibility": "hidden"});
+    shown = false;
+  } else {
+    $(".blinking").css({"visibility": "visible"});
+    shown = true;
+  }
+}, 800)
               </pre>
 
             <div class="blinking">
