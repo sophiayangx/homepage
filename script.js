@@ -9,3 +9,14 @@ $('#carrot').click(function(){
     scrollTop: $('.wrapper-projects').offset().top},
                          'slow');
 });
+
+var shown = true
+setInterval(function() {
+  if (shown) {
+    $(".blinking").css({"visibility": "hidden"});
+    shown = false;
+  } else {
+    $(".blinking").css({"visibility": "visible"});
+    shown = true;
+  }
+}, 800)
