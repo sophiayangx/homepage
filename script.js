@@ -1,22 +1,12 @@
-$('#button').click(function(){
-  $('html,body').animate({
-    scrollTop: $('.wrapper-projtitle').offset().top},
-                         'slow');
-});
+var commentInput = $("#comment-input")
+var commentDisplay = $(".comment-display")
 
-$('#carrot').click(function(){
-  $('html,body').animate({
-    scrollTop: $('.wrapper-projects').offset().top},
-                         'slow');
-});
-
-var shown = true
-setInterval(function() {
-  if (shown) {
-    $(".blinking").css({"visibility": "hidden"});
-    shown = false;
-  } else {
-    $(".blinking").css({"visibility": "visible"});
-    shown = true;
+commentInput.keydown(function(e) {
+  if (e.which == 13) {
+    addListItem("comments", commentInput.val());
   }
-}, 800)
+})
+
+onNewListItem("comments", function(newComment) {
+  commentDisplay.append("<div>" + newComment + "</div>")
+})
