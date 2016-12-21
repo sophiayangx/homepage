@@ -210,59 +210,65 @@ block.find("pre").append("&lt;button class='btn btn-primary'&gt;" + "hi" + "&lt;
         </div>
       </a>
 
-      <a href="https://sophiayangx.github.io/new-turtle/" target="_blank">
+      <a href="https://sophiayangx.github.io/new-turtle-part1" target="_blank">
         <div class="block" id="b7">
           <div class="blockcolor" id="bc7">
             <div class="blockcolorelement" id="be7">
               <h3>Turtles! Pt.1</h3>
               <ul>
                 <li>December 7, 2016</li>
-                <li>Make your turtle move in a square</li>
+                <li>Make turtle move in a square</li>
+                <li>Make turtle move in a n-sided star</li>
+                <li>Change starting place of turtle</li>
+                <li>Change image of turtle</li>
               </ul>
             </div>
           </div>
-          <div class="blockcontent">
-            code code code
+          <div class="blockcontent" id="bcon7">
+            <pre>
+$("body").keydown(function(keydownEvent) {
+  if (keydownEvent.keyCode === 13) {
+    goForward(100);
+    turnLeft();
+}})
+$("body").keydown(function(keydownEvent) {
+  if (keydownEvent.keyCode === 37) {
+    function sides(n) {
+      for (i = 0; i < n; i++) {
+        goForward(100)
+        turnLeftStar(n);
+      }}
+    sides(10)
+}})</pre>
+            <div class="turtle-cage">
+                <div id="turtle"></div>
+            </div>
+            Press enter to make pentagon
+            <br>Press space to make a star
+            <br>Reload page to return to normal
           </div>
-        </div>
-      </a>
+          </div>
+          </a>
 
-      <a href="https://sophiayangx.github.io/new-turtle/" target="_blank">
-        <div class="block" id="b8">
-          <div class="blockcolor" id="bc8">
-            <div class="blockcolorelement" id="be7">
-              <h3>Turtles! Pt.2</h3>
-              <ul>
-                <li>December 9, 2016</li>
-                <li>hey</li>
-              </ul>
+        <a href="https://sophiayangx.github.io/new-turtle-part2/" target="_blank">
+          <div class="block" id="b8">
+            <div class="blockcolor" id="bc8">
+              <div class="blockcolorelement" id="be7">
+                <h3>Turtles! Pt.2</h3>
+                <ul>
+                  <li>December 9, 2016</li>
+                  <li>hey</li>
+                </ul>
+              </div>
+            </div>
+            <div class="blockcontent">
+              code code code
             </div>
           </div>
-          <div class="blockcontent">
-            code code code
-          </div>
-        </div>
-      </a>
+        </a>
 
-      <a href="https://sophiayangx.github.io/new-turtle/" target="_blank">
-        <div class="block" id="b9">
-          <div class="blockcolor" id="bc9">
-            <div class="blockcolorelement" id="be7">
-              <h3>Turtles! Pt.3</h3>
-              <ul>
-                <li>December 14, 2016</li>
-                <li>Firebase with turtles</li>
-              </ul>
-            </div>
-          </div>
-          <div class="blockcontent">
-            code code code
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <script src="firebase-config.js" type="text/javascript"></script>
-    <script src="script.js" type="text/javascript"></script>
-  </body>
-</html>
+        <script src="firebase-config.js" type="text/javascript"></script>
+        <script src="script.js" type="text/javascript"></script>
+        <script src="turtles.js"></script>
+        </body>
+      </html>
