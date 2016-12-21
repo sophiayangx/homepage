@@ -22,6 +22,24 @@ setInterval(function() {
   }
 }, 800)
 
+//commentboard
+var commentInput = $("#comment-input")
+var commentDisplay = $("#comment-display")
+
+commentInput.keydown(function(e) {
+  if (e.keyCode == "13") {
+    addListItem("comments", commentInput.val());
+  }
+})
+
+onNewListItem("comments", function(newComment) {
+  commentDisplay.append("<div>" + newComment + "</div>")
+})
+
+commentInput.click(function(e){
+  e.preventDefault();
+});
+
 //deal with it
 $('#animateblock').hover(function() {
   $(this).animate({
