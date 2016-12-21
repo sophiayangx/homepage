@@ -34,3 +34,13 @@ $('#animateblock').mouseleave(function() {
     left: '15px'
   });
 });
+
+// copy element
+var elementsList = $("#bcon4");
+var element = $(".copyblock");
+
+var colors = ["#e57b7b", "#efbe9b", "#f9fcb8", "#bdfcb8", "#91add6", "#aa91d6", "#ddafd9"];
+
+colors.forEach(function (color) {
+  $(elementsList).append(element.clone().css("background-color", color))
+});

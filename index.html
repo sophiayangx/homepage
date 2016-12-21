@@ -145,12 +145,24 @@ $('#animateblock').mouseleave(function() {
               <h3>Copy Element</h3>
               <ul>
                 <li>November 30, 2016</li>
-                <li>hey</li>
+                <li>Started out with one block</li>
+                <li>Used .clone to copy blocks</li>
+                <li>Used .append to add blocks</li>
+                <li>Used forEach and arrays to style respective blocks</li>
               </ul>
             </div>
           </div>
-          <div class="blockcontent">
-            code code code
+          <div class="blockcontent" id="bcon4">
+            <pre>
+var elementsList = $("#elements-list");
+var element = $(".element");
+
+var colors = ["red", "orange", "yellow", "green", "blue", "purple", "pink"];
+
+colors.forEach(function (color) {
+  $(elementsList).append(element.clone().css("background-color", color))
+});</pre>
+            <div class="copyblock">copy<br>me</div>
           </div>
         </div>
       </a>
