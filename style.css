@@ -79,6 +79,14 @@
   margin-right: 15px;
 }
 
+#b7 {
+  height: 590px;
+}
+
+#b8 {
+  height: 590px;
+}
+
 #bc1 {
   background: #8b9def;
 }
@@ -255,4 +263,13 @@ p {
   border: 1px solid;
   text-align: center;
   color: black;
+}
+
+#turtle {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  position: absolute;
+  bottom: 110px;
+  left: 170px;
 }

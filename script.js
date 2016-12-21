@@ -61,3 +61,24 @@ $("#hackbutton").click(function(e){
 });
 
 //politics
+
+
+//turtle part 1
+$("body").keydown(function(keydownEvent) {
+  if (keydownEvent.keyCode === 13) {
+    goForward(80);
+    turnRight();
+  }
+})
+
+$("body").keydown(function(keydownEvent) {
+  if (keydownEvent.keyCode === 32) {
+    function sides(n) {
+      for (i = 0; i < n; i++) {
+        goForward(100)
+        turnLeftStar(n);
+      }
+    }
+    sides(10)
+  }
+})
