@@ -174,12 +174,21 @@ colors.forEach(function (color) {
               <h3>Hack the Editor</h3>
               <ul>
                 <li>December 2, 2016</li>
-                <li>Changes the editor to a background yellow</li>
+                <li>Change the editor/webpage</li>
+                <li>Use .find to return descendant element</li>
+                <li>Use .append to add elements and .css to change css</li>
               </ul>
             </div>
           </div>
           <div class="blockcontent">
-            code code code
+            <pre>
+var webpage = $(parent.document.body)
+webpage.find("div").css({border:"1px solid yellow"})
+
+var block = $(parent.parent.document.body).find("#b5")
+block.find("pre").append("&lt;button class='btn btn-primary'&gt;" + "hi" + "&lt;/button&gt;");</pre>
+            <button class="btn btn-primary" id="hackbutton">Click to Hack!</button>
+            <br><br>Reload page to return to normal
           </div>
         </div>
       </a>
@@ -188,7 +197,7 @@ colors.forEach(function (color) {
         <div class="block" id="b6">
           <div class="blockcolor" id="bc6">
             <div class="blockcolorelement" id="be6">
-              <h3>Hello</h3>
+              <h3>Politics</h3>
               <ul>
                 <li>December 6, 2016</li>
                 <li>Find the most common senator name</li>
