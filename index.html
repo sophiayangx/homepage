@@ -91,7 +91,7 @@ setInterval(function() {
         </div>
       </a>
 
-      <a href="https://sophiayangx.github.io/firebase-comment-board" target="_blank">
+      <a href="https://sophiayangx.github.io/firebase-comment-board/" target="_blank">
         <div class="block" id="b2">
           <div class="blockcolor" id="bc2">
             <div class="blockcolorelement" id="be2">
@@ -99,12 +99,22 @@ setInterval(function() {
               <ul>
                 <li>November 23, 2016</li>
                 <li>Comment anything</li>
-                <li>Firebase</li>
+                <li>Use firebase to save comments</li>
               </ul>
             </div>
           </div>
           <div class="blockcontent">
-            code code code
+            <pre>
+$("#comment-input").keydown(function(e) {
+  if (e.keyCode == "13") {
+    addListItem("comments", $("#comment-input").val());
+  }
+})
+onNewListItem("comments", function(newComment) {
+  $("#comment-display").append("&lt;div&gt;" + newComment + "&lt;/div&gt;")
+})</pre>
+            <input type="text" class="form-control" id="comment-input" placeholder="type comment &amp; press enter">
+            <div id="comment-display"></div>
           </div>
         </div>
       </a>
@@ -241,35 +251,35 @@ $("body").keydown(function(keydownEvent) {
     sides(10)
 }})</pre>
             <div class="turtle-cage">
-                <div id="turtle"></div>
+              <div id="turtle"></div>
             </div>
             Press enter to make pentagon
             <br>Press space to make a star
             <br>Reload page to return to normal
           </div>
-          </div>
-          </a>
+        </div>
+      </a>
 
-        <a href="https://sophiayangx.github.io/new-turtle-part2/" target="_blank">
-          <div class="block" id="b8">
-            <div class="blockcolor" id="bc8">
-              <div class="blockcolorelement" id="be7">
-                <h3>Turtles! Pt.2</h3>
-                <ul>
-                  <li>December 9, 2016</li>
-                  <li>hey</li>
-                </ul>
-              </div>
-            </div>
-            <div class="blockcontent">
-              code code code
+      <a href="https://sophiayangx.github.io/new-turtle-part2/" target="_blank">
+        <div class="block" id="b8">
+          <div class="blockcolor" id="bc8">
+            <div class="blockcolorelement" id="be7">
+              <h3>Turtles! Pt.2</h3>
+              <ul>
+                <li>December 9, 2016</li>
+                <li>hey</li>
+              </ul>
             </div>
           </div>
-        </a>
+          <div class="blockcontent">
+            code code code
+          </div>
+        </div>
+      </a>
 
-        <script src="firebase-config.js" type="text/javascript"></script>
-        <script src="script.js" type="text/javascript"></script>
-        <script src="turtles.js"></script>
+      <script src="firebase-config.js" type="text/javascript"></script>
+      <script src="script.js" type="text/javascript"></script>
+      <script src="turtles.js"></script>
     </div>
   </body>
-</html>
+      </html>
