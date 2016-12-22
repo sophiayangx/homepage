@@ -203,19 +203,34 @@ block.find("pre").append("&lt;button class='btn btn-primary'&gt;" + "hi" + "&lt;
         </div>
       </a>
 
-      <a href="https://www.classadoo.com/editor/?project_id=-KYJzyfNZ0zb02JyaM0j&for_course=-KTUj7w3nTwANS2XYtOY" target="_blank">
+      <a href="https://sophiayangx.github.io/politics" target="_blank">
         <div class="block" id="b6">
           <div class="blockcolor" id="bc6">
             <div class="blockcolorelement" id="be6">
               <h3>Politics</h3>
               <ul>
                 <li>December 6, 2016</li>
-                <li>Find the most common senator name</li>
+                <li>Use jQuery Ajax to get data from a server</li>
+                <li>Code will list all senator names and birthdays</li>
+                <li>Click button below to get a random senator name</li>
               </ul>
             </div>
           </div>
           <div class="blockcontent">
-            code code code
+            <pre>
+$.ajax({
+  method: "GET",
+  url: "https://www.govtrack.us/api/v2/person",
+  success: function(data) {
+    var arr = []
+    data.objects.forEach(function(object) {
+      arr.push(object.firstname)
+      list.append("&lt;div&gt;" + object.firstname + " " +  object.lastname + "; " + object.birthday + "&lt;/div&gt;")
+    })
+  }
+})</pre>
+            <input type="button" class="btn btn-primary" id="button-politics" value="Click!">
+            <div id="list-display"></div>
           </div>
         </div>
       </a>
@@ -276,10 +291,10 @@ $("body").keydown(function(keydownEvent) {
           </div>
         </div>
       </a>
-
-      <script src="firebase-config.js" type="text/javascript"></script>
-      <script src="script.js" type="text/javascript"></script>
-      <script src="turtles.js"></script>
     </div>
+
+    <script src="firebase-config.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="turtles.js"></script>
   </body>
 </html>
