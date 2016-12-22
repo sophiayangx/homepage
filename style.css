@@ -40,7 +40,7 @@
 }
 
 .block {
-  height: 500px;
+  height: 510px;
   width: 250px;
   display: inline-block;
   border-radius: 5px;
@@ -61,7 +61,7 @@
 }
 
 .blockcolor {
-  height: 200px;
+  height: 210px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
@@ -80,11 +80,11 @@
 }
 
 #b7 {
-  height: 590px;
+  height: 600px;
 }
 
 #b8 {
-  height: 590px;
+  height: 600px;
 }
 
 #bc1 {
@@ -249,7 +249,7 @@ p {
 }
 
 #comment-input {
-  height: 30px;
+  height: 28px;
 }
 
 #animateblock {
@@ -269,6 +269,11 @@ p {
   color: black;
 }
 
+#button-politics {
+  height: 28px;
+  font-size: 13px;
+}
+
 #turtle {
   height: 40px;
   width: 40px;
@@ -276,4 +281,8 @@ p {
   position: absolute;
   bottom: 110px;
   left: 170px;
+}
+
+#list-display {
+  margin-top: 10px;
 }
