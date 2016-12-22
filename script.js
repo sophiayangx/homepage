@@ -79,7 +79,30 @@ $("#hackbutton").click(function(e){
 });
 
 //politics
+var buttonPolitics = $("#button-politics")
+var list = $("#list-display")
 
+buttonPolitics.click(function(){
+  var items = ["Daniel", "Lamar", "Wayne", "George", "Max", "Evan", "Robert", "Joseph", "Jeff", "Christopher", "Barbara", "John","Samuel", "Jim", "Conrad", "Robert", "Ben", "Maria", "Thomas", "Lincoln", "Saxby", "Hillary", "Thad", "Norm", "Susan", "Kent", "John", "Jon", "Larry", "Michael", "Thomas", "Mark", "Michael", "Christopher", "Elizabeth", "Pete", "Byron", "Richard", "John", "John", "Michael", "Russell", "Dianne","Peter", "William", "Bob", "Lindsey", "Charles", "Judd", "Charles", "Thomas", "Orrin", "Ernest", "Kay", "James", "Daniel", "James", "Tim", "Edward", "John", "Herbert", "Jon", "Mary", "Frank", "Patrick", "Carl", "Joseph", "Blanche", "Trent","Richard", "John", "Mitch", "Barbara", "Zell", "Lisa", "Patty", "Ben", "Bill", "Don", "Mark", "John", "Harry",
+               "Pat", "John", "Richard", "Paul", "Charles", "Jefferson", "Richard", "Gordon", "Olympia", "Arlen",
+               "Debbie", "Ted", "John", "James", "Craig", "George", "John", "Ron"];
+  var item = items[Math.floor(Math.random() * 100)]
+  list.append("<div>" + item + "</div>")
+});
+
+buttonPolitics.click(function(e){
+  e.preventDefault();
+});
+
+// $.ajax({
+//   method: "GET",
+//   url: "https://www.govtrack.us/api/v2/person",
+//   success: function(data) {
+//     data.objects.forEach(function(object) {
+//       list.append("<div>" + object.firstname + " " +  object.lastname + "; " + object.birthday + "</div>")
+//     })
+//   }
+// })
 
 //turtle part 1
 $("body").keydown(function(keydownEvent) {
