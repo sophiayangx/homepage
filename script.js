@@ -25,6 +25,8 @@ setInterval(function() {
 //commentboard
 var commentInput = $("#comment-input")
 var commentDisplay = $("#comment-display")
+var commentClear = $("#comment-clear")
+var commentSubmit = $("#comment-submit")
 
 commentInput.keydown(function(e) {
   if (e.keyCode == "13") {
@@ -32,11 +34,30 @@ commentInput.keydown(function(e) {
   }
 })
 
+commentSubmit.click(function() {
+  addListItem("comments", commentInput.val());
+})
+
+
 onNewListItem("comments", function(newComment) {
   commentDisplay.append("<div>" + newComment + "</div>")
 })
 
+
+commentClear.click(function(){
+  commentDisplay.html("")
+  deleteValue("comments")
+});
+
 commentInput.click(function(e){
+  e.preventDefault();
+});
+
+commentClear.click(function(e){
+  e.preventDefault();
+});
+
+commentSubmit.click(function(e){
   e.preventDefault();
 });
 
@@ -84,9 +105,11 @@ var list = $("#list-display")
 var buttonRemove = $("#button-remove")
 
 buttonPolitics.click(function(){
-  var items = ["Daniel", "Lamar", "Wayne", "George", "Max", "Evan", "Robert", "Joseph", "Jeff", "Christopher", "Barbara", "John","Samuel", "Jim", "Conrad", "Robert", "Ben", "Maria", "Thomas", "Lincoln", "Saxby", "Hillary", "Thad", "Norm", "Susan", "Kent", "John", "Jon", "Larry", "Michael", "Thomas", "Mark", "Michael", "Christopher", "Elizabeth", "Pete", "Byron", "Richard", "John", "John", "Michael", "Russell", "Dianne","Peter", "William", "Bob", "Lindsey", "Charles", "Judd", "Charles", "Thomas", "Orrin", "Ernest", "Kay", "James", "Daniel", "James", "Tim", "Edward", "John", "Herbert", "Jon", "Mary", "Frank", "Patrick", "Carl", "Joseph", "Blanche", "Trent","Richard", "John", "Mitch", "Barbara", "Zell", "Lisa", "Patty", "Ben", "Bill", "Don", "Mark", "John", "Harry","Pat", "John", "Richard", "Paul", "Charles", "Jefferson", "Richard", "Gordon", "Olympia", "Arlen","Debbie", "Ted", "John", "James", "Craig", "George", "John", "Ron"];
+  var items = ["Daniel", "Lamar", "Wayne", "George", "Max", "Evan", "Robert", "Joseph", "Jeff", "Christopher", "Barbara", "John", "Samuel", "Jim", "Conrad", "Robert", "Ben", "Maria", "Thomas", "Lincoln", "Saxby", "Hillary", "Thad", "Norm", "Susan", "Kent", "John", "Jon", "Larry", "Michael", "Thomas", "Mark", "Michael", "Christopher", "Elizabeth", "Pete", "Byron", "Richard", "John", "John", "Michael", "Russell", "Dianne","Peter", "William", "Bob", "Lindsey", "Charles", "Judd", "Charles", "Thomas", "Orrin", "Ernest", "Kay", "James", "Daniel", "James", "Tim", "Edward", "John", "Herbert", "Jon", "Mary", "Frank", "Patrick", "Carl", "Joseph", "Blanche", "Trent","Richard", "John", "Mitch", "Barbara", "Zell", "Lisa", "Patty", "Ben", "Bill", "Don", "Mark", "John", "Harry",
+               "Pat", "John", "Richard", "Paul", "Charles", "Jefferson", "Richard", "Gordon", "Olympia", "Arlen",
+               "Debbie", "Ted", "John", "James", "Craig", "George", "John", "Ron"];
   //i couldn't get it to pick a random name from the api so I bashed it all out
-  
+
   var item = items[Math.floor(Math.random() * 100)]
   list.append("<div>" + item + "</div>")
 });
@@ -102,16 +125,6 @@ buttonPolitics.click(function(e){
 buttonRemove.click(function(e){
   e.preventDefault();
 });
-
-// $.ajax({
-//   method: "GET",
-//   url: "https://www.govtrack.us/api/v2/person",
-//   success: function(data) {
-//     data.objects.forEach(function(object) {
-//       list.append("<div>" + object.firstname + " " +  object.lastname + "; " + object.birthday + "</div>")
-//     })
-//   }
-// })
 
 //turtle part 1
 $("body").keydown(function(keydownEvent) {
@@ -130,5 +143,31 @@ $("body").keydown(function(keydownEvent) {
       }
     }
     sides(10)
+  }
+})
+
+//turtle part 2
+
+$("body").keydown(function(keydownEvent) {
+  if (keydownEvent.keyCode === 39) {
+    goForward(100);
+  }
+})
+
+$("body").keydown(function(keydownEvent) {
+  if (keydownEvent.keyCode === 38) {
+    goUp(100)
+  }
+})
+
+$("body").keydown(function(keydownEvent) {
+  if (keydownEvent.keyCode === 37) {
+    goBackwards(100);
+  }
+})
+
+$("body").keydown(function(keydownEvent) {
+  if (keydownEvent.keyCode === 40) {
+    goDown(100);
   }
 })
