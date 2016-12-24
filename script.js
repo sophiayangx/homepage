@@ -105,9 +105,7 @@ var list = $("#list-display")
 var buttonRemove = $("#button-remove")
 
 buttonPolitics.click(function(){
-  var items = ["Daniel", "Lamar", "Wayne", "George", "Max", "Evan", "Robert", "Joseph", "Jeff", "Christopher", "Barbara", "John", "Samuel", "Jim", "Conrad", "Robert", "Ben", "Maria", "Thomas", "Lincoln", "Saxby", "Hillary", "Thad", "Norm", "Susan", "Kent", "John", "Jon", "Larry", "Michael", "Thomas", "Mark", "Michael", "Christopher", "Elizabeth", "Pete", "Byron", "Richard", "John", "John", "Michael", "Russell", "Dianne","Peter", "William", "Bob", "Lindsey", "Charles", "Judd", "Charles", "Thomas", "Orrin", "Ernest", "Kay", "James", "Daniel", "James", "Tim", "Edward", "John", "Herbert", "Jon", "Mary", "Frank", "Patrick", "Carl", "Joseph", "Blanche", "Trent","Richard", "John", "Mitch", "Barbara", "Zell", "Lisa", "Patty", "Ben", "Bill", "Don", "Mark", "John", "Harry",
-               "Pat", "John", "Richard", "Paul", "Charles", "Jefferson", "Richard", "Gordon", "Olympia", "Arlen",
-               "Debbie", "Ted", "John", "James", "Craig", "George", "John", "Ron"];
+  var items = ["Daniel", "Lamar", "Wayne", "George", "Max", "Evan", "Robert", "Joseph", "Jeff", "Christopher", "Barbara", "John", "Samuel", "Jim", "Conrad", "Robert", "Ben", "Maria", "Thomas", "Lincoln", "Saxby", "Hillary", "Thad", "Norm", "Susan", "Kent", "John", "Jon", "Larry", "Michael", "Thomas", "Mark", "Michael", "Christopher", "Elizabeth", "Pete", "Byron", "Richard", "John", "John", "Michael", "Russell", "Dianne","Peter", "William", "Bob", "Lindsey", "Charles", "Judd", "Charles", "Thomas", "Orrin", "Ernest", "Kay", "James", "Daniel", "James", "Tim", "Edward", "John", "Herbert", "Jon", "Mary", "Frank", "Patrick", "Carl", "Joseph", "Blanche", "Trent", "Richard", "John", "Mitch", "Barbara", "Zell", "Lisa", "Patty", "Ben", "Bill", "Don", "Mark", "John", "Harry", "Pat", "John", "Richard", "Paul", "Charles", "Jefferson", "Richard", "Gordon", "Olympia", "Arlen", "Debbie", "Ted", "John", "James", "Craig", "George", "John", "Ron"];
   //i couldn't get it to pick a random name from the api so I bashed it all out
 
   var item = items[Math.floor(Math.random() * 100)]
