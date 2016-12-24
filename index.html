@@ -15,12 +15,12 @@
 
     <div class="container-fluid wrapper-home">
       <div class="row title-container" id="title">
-        <div class="col-xs-7">
-          <h2>W H A T &nbsp;&nbsp; I ' V E &nbsp;&nbsp; L E A R N E D</h2>
-          <div id="div-button">
-            <input type="button" value="p r o j e c t s" id="button">
-          </div>
+        <!-- <div class="col-xs-7"> -->
+        <h4>W H A T &nbsp;&nbsp; I ' V E &nbsp;&nbsp; L E A R N E D</h4>
+        <div id="div-button">
+          <input type="button" value="p r o j e c t s" id="button">
         </div>
+        <!-- </div> -->
 
       </div>
     </div>
@@ -113,7 +113,9 @@ $("#comment-input").keydown(function(e) {
 onNewListItem("comments", function(newComment) {
   $("#comment-display").append("&lt;div&gt;" + newComment + "&lt;/div&gt;")
 })</pre>
-            <input type="text" class="form-control" id="comment-input" placeholder="type comment &amp; press enter">
+            <input type="text" class="form-control" id="comment-input" placeholder="type comment">
+            <input type="button" class="btn btn-primary" id="comment-submit" value="Submit">
+            <input type="button" class="btn btn-primary" id="comment-clear" value="Clear">
             <div id="comment-display"></div>
           </div>
         </div>
@@ -266,9 +268,6 @@ $("body").keydown(function(keydownEvent) {
       }}
     sides(10)
 }})</pre>
-            <div class="turtle-cage">
-              <div id="turtle"></div>
-            </div>
             Press enter to make pentagon
             <br>Press space to make a star
             <br>Reload page to return to normal
@@ -283,15 +282,56 @@ $("body").keydown(function(keydownEvent) {
               <h3>Turtles! Pt.2</h3>
               <ul>
                 <li>December 9, 2016</li>
-                <li>hey</li>
+                <li>Make turtle go left, right, down, or up using arrow keys</li>
+                <li>Below is an example of going down</li>
               </ul>
             </div>
           </div>
           <div class="blockcontent">
-            code code code
+            <pre>
+function goDown(distance) {
+  var radians = -1 * heading * (Math.PI/180);
+  var yIncrement = -Math.cos(radians) * distance;
+  var xIncrement = Math.sin(radians) * distance;
+
+  var origPosition = {x: position.x, y: position.y};
+  var origHeading = heading + 90;
+
+  position.x = position.x + xIncrement;
+  position.y = position.y + yIncrement;
+
+  turtle.animate({
+    left: position.x,
+    bottom: position.y,
+  },{
+    complete : function() {
+      insertLine(origPosition, origHeading, distance)
+    }})}</pre>
           </div>
         </div>
       </a>
+
+      <a href="https://sophiayangx.github.io/new-turtle-part2/" target="_blank">
+        <div class="block" id="b9">
+          <div class="blockcontent">
+            <pre>
+$("body").keydown(function(keydownEvent) {
+  if (keydownEvent.keyCode === 40) {
+    goDown(100);
+  }
+})</pre>
+            <div class="turtle-cage">
+              <div id="turtle"></div>
+            </div>
+            Use arrow keys to move left, right, up, or down
+            <br>Press enter to make pentagon
+            <br>Press space to make a star
+            <br>Reload page to return to normal
+
+          </div>
+        </div>
+      </a>
+
     </div>
 
     <script src="firebase-config.js" type="text/javascript"></script>
