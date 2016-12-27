@@ -162,7 +162,7 @@ h1 {
 h2 {
   color: white;
   text-align: center;
-  font-family: Beauty and the Beast, Baskerville;
+  font-family: Beauty and the Beast, Baskerville, Avenir Next Condensed;
   font-size: 70px;
   position: relative;
   display: block;
@@ -178,7 +178,7 @@ h3 {
 
 h4 {
   color: white;
-  font-family: Beauty and the Beast, Avenir Next Condensed;
+  font-family: Beauty and the Beast, BaskerbAvenir Next Condensed;
   font-size: 70px;
   position: relative;
   display: block;
