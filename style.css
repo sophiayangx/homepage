@@ -162,7 +162,7 @@ h1 {
 h2 {
   color: white;
   text-align: center;
-  font-family: Beauty and the Beast;
+  font-family: Beauty and the Beast, ;
   font-size: 70px;
   position: relative;
   display: block;
@@ -199,7 +199,7 @@ li {
 }
 
 p {
-  font-family: capitals, Baskervil;
+  font-family: capitals, Baskerville;
   font-size: 20px;
   text-align: center;
   margin-top: 60px;
