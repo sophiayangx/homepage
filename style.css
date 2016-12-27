@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Beauty and the Beast;
+  src: url("http://www.dafont.com/beauty-and-the-beast.font")
+}
+
 .wrapper-home {
   display: flex;
   align-items: center;
