@@ -1,7 +1,19 @@
+@import url(//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold);
+
 @font-face {
-  font-family: Beauty and the Beast;
-  src: url("http://www.dafont.com/beauty-and-the-beast.font")
+  font-family: "LuloCleanW01-OneBold";
+  src: url("//db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.eot");
+  src: url("//db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.svg#LuloCleanW01-OneBold") format("svg");
 }
+
+/*@font-face {
+font-family: "Beauty and the Beast";
+src: url("http://www.dafont.com/beauty-and-the-beast.font")
+}*/
 
 .wrapper-home {
   display: flex;
@@ -146,13 +158,13 @@
 
 img {
   display: block;
-  height: 100%;
+  height: 650px;
   width: 100%;
   /*margin-right: -10px;*/
 }
 
 h1 {
-  font-family: Beauty and the Beast;
+  font-family: Beauty and the Beast, LuloCleanW01-OneBold, Times;
   font-size: 50px;
   text-align: center;
   position: relative;
@@ -162,7 +174,7 @@ h1 {
 h2 {
   color: white;
   text-align: center;
-  font-family: Beauty and the Beast;
+  font-family: Beauty and the Beast, LuloCleanW01-OneBold, Times;
   font-size: 70px;
   position: relative;
   display: block;
@@ -178,7 +190,7 @@ h3 {
 
 h4 {
   color: white;
-  font-family: Beauty and the Beast;
+  font-family: Beauty and the Beast, LuloCleanW01-OneBold, Times;
   font-size: 70px;
   position: relative;
   display: block;
@@ -199,7 +211,7 @@ li {
 }
 
 p {
-  font-family: capitals, Baskerville;
+  font-family: capitals;
   font-size: 20px;
   text-align: center;
   margin-top: 60px;
