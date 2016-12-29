@@ -6,7 +6,7 @@
 .wrapper-home {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 650px;
   justify-content: center;
   text-align: center;
   background-image: url(  "http://www.expertrain.com/SiteAssets/Images/19%20healthy%20desserts%20you%20can%20make%20in%20a%20blender/bigstock-Ripe-Pineapple-On-A-Yellow-Woo-115590353.jpg");
@@ -19,7 +19,7 @@
 .wrapper-projtitle {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 650px;
   justify-content: center;
   background: #f2bcbc;
   background-image: url( "https://www.dropbox.com/s/kzne7tqf4zc1rg5/PICTURE.png?raw=1");
