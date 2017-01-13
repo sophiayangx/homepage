@@ -347,10 +347,42 @@ text-align: center;
   width: 40px;
   border: 1px solid green;
   position: absolute;
-  bottom: 300px;
+  bottom: 415px;
   left: 110px;
 }
 
-pre {
-    overflow: auto;
+#pre-politics {
+	overflow: auto;
+	height: 100px;
+}
+
+#pre-politics:hover {
+	position: relative;
+	height: 230px;
+	z-index: 99;
+  transition-duration: 0.4s;
+}
+
+#pre-comment {
+  	overflow: auto;
+  	height: 100px;
+}
+
+#pre-comment:hover {
+  	position: relative;
+  	height: 170px;
+  	z-index: 99;
+    transition-duration: 0.4s;
+}
+
+#pre-turtles {
+  overflow: auto;
+  height: 200px;
+}
+
+#pre-turtles:hover {
+  overflow: auto;
+  height: 315px;
+  z-index: 99;
+  transition-duration: 0.4s;
 }
