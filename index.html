@@ -107,7 +107,7 @@ setInterval(function() {
             </div>
           </div>
           <div class="blockcontent">
-            <pre>
+            <pre id="pre-comment">
 $("#comment-input").keydown(function(e) {
   if (e.keyCode == "13") {
     addListItem("comments", $("#comment-input").val());
@@ -222,7 +222,7 @@ block.find("pre").append("&lt;button class='btn btn-primary'&gt;" + "hi" + "&lt;
             </div>
           </div>
           <div class="blockcontent">
-            <pre>
+            <pre id="pre-politics">
 $.ajax({
   method: "GET",
   url: "https://www.govtrack.us/api/v2/person",
@@ -288,10 +288,13 @@ $("body").keydown(function(keydownEvent) {
                 <li>Make turtle go left, right, down, or up using arrow keys</li>
                 <li>Below is an example of going down</li>
               </ul>
+              <div class="turtle-cage">
+                  <div id="turtle"></div>
+              </div>
             </div>
           </div>
           <div class="blockcontent">
-            <pre>
+            <pre id="pre-turtles">
 function goDown(distance) {
   var radians = -1 * heading * (Math.PI/180);
   var yIncrement = -Math.cos(radians) * distance;
@@ -309,28 +312,17 @@ function goDown(distance) {
   },{
     complete : function() {
       insertLine(origPosition, origHeading, distance)
-    }})}</pre>
-          </div>
-        </div>
-      </a>
-
-      <a href="https://sophiayangx.github.io/new-turtle-part2/" target="_blank">
-        <div class="block" id="b9">
-          <div class="blockcontent">
-            <pre>
-$("body").keydown(function(keydownEvent) {
-  if (keydownEvent.keyCode === 40) {
-    goDown(100);
+      }
+    })
   }
-})</pre>
-            <div class="turtle-cage">
-                <div id="turtle"></div>
-            </div>
-            Use arrow keys to move left, right, up, or down
-            <br>Press enter to make pentagon
-            <br>Press space to make a star
-            <br>Reload page to return to normal
 
+    $("body").keydown(function(keydownEvent) {
+      if (keydownEvent.keyCode === 40) {
+        goDown(100);
+      }
+    })</pre>
+
+    Use arrow keys to move left, right, up, or down
           </div>
         </div>
       </a>
