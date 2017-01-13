@@ -350,3 +350,7 @@ text-align: center;
   bottom: 300px;
   left: 110px;
 }
+
+pre {
+    overflow: auto;
+}
