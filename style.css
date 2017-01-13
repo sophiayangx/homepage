@@ -1,7 +1,24 @@
+/*@import url(//db.onlinewebfonts.com/c/39a2c7f346d5cfae7045aeb2fb50d9ad?family=LuloCleanW01-OneBold);
+
+@font-face {
+    font-family: "LuloCleanW01-OneBold";
+    src: url("//db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.eot");
+    src: url("//db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.svg#LuloCleanW01-OneBold") format("svg");
+}*/
+
+@font-face {
+  font-family: "Beauty and the Beast";
+  src: url("beauty_and_the_beast.otf")
+}
+
 .wrapper-home {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 650px;
   justify-content: center;
   text-align: center;
   background-image: url(  "http://www.expertrain.com/SiteAssets/Images/19%20healthy%20desserts%20you%20can%20make%20in%20a%20blender/bigstock-Ripe-Pineapple-On-A-Yellow-Woo-115590353.jpg");
@@ -9,22 +26,19 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /*margin: 0px;*/
 }
 
 .wrapper-projtitle {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 650px;
   justify-content: center;
-  /*  background: #BEFEEB;*/
-  background: #FFDFEF;
+  background: #f2bcbc;
   background-image: url( "https://www.dropbox.com/s/kzne7tqf4zc1rg5/PICTURE.png?raw=1");
   background-attachment: fixed;
   background-position: left;
   background-size: cover;
   background-position: center;
-  /*margin: 0px;*/
 }
 
 .wrapper-projects {
@@ -43,8 +57,8 @@
 }
 
 .block {
-  height: 500px;
-  width: 250px;
+  height: 510px;
+  width: 270px;
   display: inline-block;
   border-radius: 5px;
   margin-left: 60px;
@@ -64,7 +78,7 @@
 }
 
 .blockcolor {
-  height: 200px;
+  height: 210px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
@@ -77,21 +91,36 @@
 
 .blockcontent {
   color: #7e8280;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-top: 20px;
-  margin-right: 10px;
+  margin-right: 15px;
+}
+
+#b7 {
+  height: 600px;
+}
+
+#b8 {
+  height: 600px;
+}
+
+#b9 {
+  height: 600px;
 }
 
 #bc1 {
   background: #8b9def;
+  height: 195px;
 }
 
 #bc2 {
   background: #aae0ce;
+  height: 195px;
 }
 
 #bc3 {
   background: #ca8bef;
+  height: 195px;
 }
 
 #bc4 {
@@ -120,6 +149,7 @@
 
 .img-wrapper {
   overflow: hidden;
+  padding-right: 0px;
 }
 
 .wrapper-learned {
@@ -128,12 +158,13 @@
 
 img {
   display: block;
-  height: 100%;
+  height: 650px;
   width: 100%;
+  /*margin-right: -10px;*/
 }
 
 h1 {
-  font-family: Beauty and the Beast;
+  font-family: Beauty and the Beast, LuloCleanW01-OneBold, Times;
   font-size: 50px;
   text-align: center;
   position: relative;
@@ -143,11 +174,11 @@ h1 {
 h2 {
   color: white;
   text-align: center;
-  font-family: Beauty and the Beast;
+  font-family: Beauty and the Beast, LuloCleanW01-OneBold, Times;
   font-size: 70px;
   position: relative;
-  top: 30px;
-  left: 20px;
+  display: block;
+  width: 500px;
 }
 
 h3 {
@@ -155,6 +186,18 @@ h3 {
   margin-left: 30px;
   margin-top: 0px;
   margin-right: 20px;
+}
+
+h4 {
+  color: white;
+  font-family: Beauty and the Beast, LuloCleanW01-OneBold, Times;
+  font-size: 70px;
+  position: relative;
+  display: block;
+  margin-top: 40px;
+  margin-right: 400px;
+  height: 100px;
+  width: 500px;
 }
 
 ul {
@@ -175,8 +218,6 @@ p {
   margin-left: 80px;
   margin-right: 80px;
   position: relative;
-  /*word-wrap: break-word;
-  vertical-align: baseline;*/
 }
 
 #button-example {
@@ -201,7 +242,7 @@ p {
 }
 
 #button-wrapper {
-  text-align: center;
+text-align: center;
 }
 
 #button {
@@ -213,6 +254,8 @@ p {
   font-family: capitals;
   transition-duration: 0.4s;
   cursor: pointer;
+  margin-right: 450px;
+  margin-top: 30px;
 }
 
 #button:hover {
@@ -239,4 +282,71 @@ p {
 
 #carrot:hover {
   color: #878787;
+}
+
+#blinking {
+  font-size: 16px;
+}
+
+#comment-input {
+  height: 28px;
+  width: 120px;
+  display: inline-block;
+}
+
+#comment-submit {
+  height: 28px;
+  width: 60px;
+  text-align: left;
+  font-size: 12px;
+  display: inline-block;
+  padding-left: -25px;
+}
+#comment-clear {
+  height: 28px;
+  width: 50px;
+  text-align: center;
+  font-size: 12px;
+  display: inline-block;
+}
+
+
+#animateblock {
+  background-color: pink;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+}
+
+.copyblock {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  border: 1px solid;
+  text-align: center;
+  color: black;
+}
+
+#button-politics {
+  height: 28px;
+  font-size: 13px;
+}
+
+#button-remove {
+  height: 28px;
+  font-size: 13px;
+}
+
+#list-display {
+  margin-top: 10px;
+}
+
+#turtle {
+  height: 40px;
+  width: 40px;
+  border: 1px solid green;
+  position: absolute;
+  bottom: 300px;
+  left: 110px;
 }
